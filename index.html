@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freire Arts | Comunicação Visual e Serralheria Própria em Santo André</title>
+    <meta name="description" content="Fachadas em ACM, letras caixa com LED, lonas e adesivos. Comunicação visual com serralheria própria em Santo André e região. Peça seu orçamento pelo WhatsApp.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%231A1A1A%22/><text x=%2250%22 y=%2272%22 font-size=%2270%22 font-family=%22Arial%22 font-weight=%22900%22 text-anchor=%22middle%22 fill=%22%23E53935%22>F</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#1A1A1A',
+                        brandRed: '#E53935',
+                        brandYellow: '#FFEB3B',
+                        brandCyan: '#00BCD4',
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-brandDark text-white font-body selection:bg-brandRed selection:text-white">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-brandDark/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#inicio" class="text-2xl font-heading font-black tracking-wider">FREIRE<span class="text-brandRed">ARTS</span></a>
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm" aria-label="Principal">
+                <a href="#inicio" class="hover:text-brandYellow transition-colors">Início</a>
+                <a href="#servicos" class="hover:text-brandYellow transition-colors">Serviços</a>
+                <a href="#portfolio" class="hover:text-brandYellow transition-colors">Trabalhos</a>
+                <a href="#diferenciais" class="hover:text-brandYellow transition-colors">Diferenciais</a>
+                <a href="#sobre" class="hover:text-brandYellow transition-colors">A empresa</a>
+                <a href="#contato" class="hover:text-brandYellow transition-colors">Contato</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/5511981952723?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="hidden sm:inline-block bg-brandRed hover:bg-red-700 text-white font-heading font-bold uppercase px-5 py-2.5 text-sm tracking-wider transition-all">
+                    Orçamento rápido
+                </a>
+                <button id="menu-btn" class="md:hidden p-2 border border-white/20" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+                </button>
+            </div>
+        </div>
+        <nav id="menu-mobile" class="hidden md:hidden bg-brandDark border-t border-white/10 px-6 py-4 flex-col gap-4 font-medium" aria-label="Menu mobile">
+            <a href="#inicio" class="block py-2">Início</a>
+            <a href="#servicos" class="block py-2">Serviços</a>
+            <a href="#portfolio" class="block py-2">Trabalhos</a>
+            <a href="#diferenciais" class="block py-2">Diferenciais</a>
+            <a href="#sobre" class="block py-2">A empresa</a>
+            <a href="#contato" class="block py-2">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+    <!-- Hero -->
+    <section id="inicio" class="relative min-h-screen flex items-center pt-20 bg-gradient-to-br from-brandDark via-[#222] to-black overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#E53935_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-6 py-16 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="inline-block bg-brandYellow text-brandDark font-heading font-bold text-xs px-3 py-1 mb-6 tracking-widest">Serralheria própria e comunicação visual</span>
+                <h1 class="text-4xl sm:text-6xl font-heading font-black tracking-tight leading-none mb-6 uppercase">
+                    Sua fachada trabalha por você <span class="text-brandYellow">dia e noite.</span>
+                </h1>
+                <p class="text-gray-300 text-lg mb-8 leading-relaxed max-w-xl">
+                    Fachadas em ACM, letras caixa com LED, lonas e adesivos. Do projeto à instalação, tudo com estrutura própria em Santo André e região.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/5511981952723?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="bg-brandRed hover:bg-red-700 text-white text-center font-heading font-bold uppercase px-8 py-4 tracking-wider transition-all shadow-xl">
+                        Pedir orçamento no WhatsApp
+                    </a>
+                    <a href="#portfolio" class="border-2 border-white/20 hover:border-brandYellow text-center font-heading font-bold uppercase px-8 py-4 tracking-wider transition-all hover:text-brandYellow">
+                        Ver trabalhos
+                    </a>
+                </div>
+            </div>
+            <!-- Foto principal: coloque sua melhor fachada em img/hero.jpg -->
+            <div class="relative">
+                <div class="aspect-[4/5] sm:aspect-[4/3] lg:aspect-[4/5] bg-gradient-to-tr from-brandRed/30 to-brandYellow/20 border border-white/10 shadow-2xl overflow-hidden">
+                    <img src="img/hero.jpg" alt="Fachada em ACM com letreiro iluminado, instalada pela Freire Arts" class="w-full h-full object-cover" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-24 bg-[#141414]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-2xl mb-14">
+                <h2 class="text-3xl sm:text-4xl font-heading font-black uppercase">O que fazemos</h2>
+                <p class="text-gray-400 mt-3">Três frentes para a sua marca ser vista e lembrada, feitas pela mesma equipe.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <article class="bg-brandDark border border-white/10 border-t-4 border-t-brandRed p-8">
+                    <h3 class="text-xl font-heading font-bold mb-4 uppercase">Fachadas em ACM</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Revestimento em ACM de alta durabilidade para modernizar o visual externo do seu comércio, com acabamento limpo e estrutura de serralheria própria.</p>
+                </article>
+                <article class="bg-brandDark border border-white/10 border-t-4 border-t-brandYellow p-8">
+                    <h3 class="text-xl font-heading font-bold mb-4 uppercase">Letras caixa e LED</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Letreiros em alto relevo com iluminação em LED embutida, para a sua marca aparecer com força de dia e brilhar à noite.</p>
+                </article>
+                <article class="bg-brandDark border border-white/10 border-t-4 border-t-brandCyan p-8">
+                    <h3 class="text-xl font-heading font-bold mb-4 uppercase">Impressão e adesivos</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Impressão digital em grande formato, adesivos perfurados, lonas e sinalização interna com cores vivas e alta definição.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-2xl mb-14">
+                <h2 class="text-3xl sm:text-4xl font-heading font-black uppercase">Trabalhos entregues</h2>
+                <p class="text-gray-400 mt-3">Fachadas e letreiros que já saíram da nossa oficina. Troque as imagens pelas suas fotos em <code class="text-brandYellow">img/</code>.</p>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+                <figure class="aspect-[4/3] bg-[#222] border border-white/10 overflow-hidden"><img src="img/trabalho-1.jpg" alt="Fachada comercial em ACM" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'"></figure>
+                <figure class="aspect-[4/3] bg-[#222] border border-white/10 overflow-hidden"><img src="img/trabalho-2.jpg" alt="Letreiro em letra caixa com LED aceso à noite" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'"></figure>
+                <figure class="aspect-[4/3] bg-[#222] border border-white/10 overflow-hidden"><img src="img/trabalho-3.jpg" alt="Fachada de loja com adesivos e lona" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'"></figure>
+                <figure class="aspect-[4/3] bg-[#222] border border-white/10 overflow-hidden"><img src="img/trabalho-4.jpg" alt="Letreiro luminoso em fachada" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'"></figure>
+                <figure class="aspect-[4/3] bg-[#222] border border-white/10 overflow-hidden"><img src="img/trabalho-5.jpg" alt="Fachada em ACM com estrutura metálica" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'"></figure>
+                <figure class="aspect-[4/3] bg-[#222] border border-white/10 overflow-hidden"><img src="img/trabalho-6.jpg" alt="Comunicação visual aplicada em comércio local" loading="lazy" class="w-full h-full object-cover" onerror="this.style.display='none'"></figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section id="diferenciais" class="py-24 bg-[#141414]">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl sm:text-4xl font-heading font-black uppercase max-w-2xl mb-14">Por que fazer com a Freire Arts</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-10">
+                <div class="border-l-4 border-brandRed pl-6">
+                    <h3 class="font-heading font-bold text-lg mb-2">Serralheria própria</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">A estrutura metálica é feita por nós. Isso dá mais controle sobre prazo, medida e acabamento.</p>
+                </div>
+                <div class="border-l-4 border-brandYellow pl-6">
+                    <h3 class="font-heading font-bold text-lg mb-2">Do projeto à instalação</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Você fala com uma equipe só, do desenho até a fachada instalada.</p>
+                </div>
+                <div class="border-l-4 border-brandCyan pl-6">
+                    <h3 class="font-heading font-bold text-lg mb-2">Acabamento industrial</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Materiais pensados para durar na rua, no sol e na chuva.</p>
+                </div>
+                <div class="border-l-4 border-white/40 pl-6">
+                    <h3 class="font-heading font-bold text-lg mb-2">Atendimento local</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Atuamos em Santo André e região, com visita para medição e orçamento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-24">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-3xl sm:text-4xl font-heading font-black uppercase mb-6">A empresa</h2>
+            <p class="text-gray-300 leading-relaxed mb-4">A Freire Arts é uma empresa de comunicação visual com serralheria própria, em Santo André - SP. Criamos e instalamos fachadas, letreiros e sinalização para lojas e comércios que querem se destacar na rua.</p>
+            <p class="text-gray-300 leading-relaxed">Como produzimos a estrutura e a parte visual no mesmo lugar, o seu projeto anda mais rápido e chega com o acabamento que você viu no orçamento.</p>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-24 bg-brandRed">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl sm:text-5xl font-heading font-black uppercase mb-4">Vamos orçar a sua fachada?</h2>
+            <p class="text-white/90 text-lg mb-8">Mande uma foto do local e as medidas aproximadas. Respondemos pelo WhatsApp.</p>
+            <a href="https://wa.me/5511981952723?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="inline-block bg-brandDark hover:bg-black text-white font-heading font-bold uppercase px-10 py-4 tracking-wider transition-all">
+                Chamar no WhatsApp: (11) 98195-2723
+            </a>
+            <p class="text-white/80 text-sm mt-6">Atendemos Santo André - SP e região.</p>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-white/10 py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <span class="text-xl font-heading font-black tracking-wider">FREIRE<span class="text-brandRed">ARTS</span></span>
+                <p class="text-sm text-gray-500 mt-1">Comunicação visual e serralheria em Santo André - SP</p>
+            </div>
+            <p class="text-xs text-gray-600">© 2026 Freire Arts. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botão flutuante de WhatsApp (celular) -->
+    <a href="https://wa.me/5511981952723?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="sm:hidden fixed bottom-4 right-4 z-50 bg-brandRed text-white font-heading font-bold text-sm uppercase px-5 py-3 shadow-xl" aria-label="Falar no WhatsApp">WhatsApp</a>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu-mobile');
+        btn.addEventListener('click', () => {
+            const open = menu.classList.toggle('hidden') === false;
+            menu.classList.toggle('flex', open);
+            btn.setAttribute('aria-expanded', open);
+        });
+        menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+            menu.classList.add('hidden'); menu.classList.remove('flex');
+            btn.setAttribute('aria-expanded', 'false');
+        }));
+    </script>
+</body>
+</html>
